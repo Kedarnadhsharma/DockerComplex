@@ -1,0 +1,10 @@
+{
+    "AWSEBDOckerrunVersion":2,
+    "containerDefinitions": [
+        {
+            "name": "client",
+            "image": "ktadikonda/dockercomplex-client",
+            "hostname": "client"
+        }
+    ]
+}
