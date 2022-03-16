@@ -4,7 +4,20 @@
         {
             "name": "client",
             "image": "ktadikonda/dockercomplex-client",
-            "hostname": "client"
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "server",
+            "image": "ktadikonda/dockercomplex-server",
+            "hostname": "api", 
+            "essential": false
+        },
+        {
+            "name": "worker",
+            "image": "ktadikonda/dockercomplex-worker",
+            "hostname": "worker",
+            "essential": false
         }
     ]
 }
