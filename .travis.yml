@@ -17,4 +17,4 @@ after_success:
   - docker push ktadikonda/dockercomplex-client
   - docker push ktadikonda/dockercomplex-nginx
   - docker push ktadikonda/dockercomplex-server
-  - docker push tadikonda/dockercomplex-worker
+  - docker push ktadikonda/dockercomplex-worker
