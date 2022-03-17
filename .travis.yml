@@ -18,3 +18,14 @@ after_success:
   - docker push ktadikonda/dockercomplex-nginx
   - docker push ktadikonda/dockercomplex-server
   - docker push ktadikonda/dockercomplex-worker
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "DockerComplex"
+  env: "DockerComplex-env"
+  bucket_name: "elasticbeanstalk-us-east-1-702935569139"
+  bucket_path: "DockerComplex"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

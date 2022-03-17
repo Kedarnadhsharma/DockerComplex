@@ -18,6 +18,20 @@
             "image": "ktadikonda/dockercomplex-worker",
             "hostname": "worker",
             "essential": false
+        },
+        {
+            "name": "nginx",
+            "image": "ktadikonda/dockercomplex-nginx",
+            "hostname": "nginx",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "containerPort": 80
+                }               
+            ],
+            "links": ["client","server"]
         }
+        
     ]
 }
