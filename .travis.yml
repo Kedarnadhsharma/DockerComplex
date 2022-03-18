@@ -21,10 +21,10 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "DockerComplex"
-  env: "DockerComplex-env"
+  app: "Dockercomplex"
+  env: "Dockercomplex-env"
   bucket_name: "elasticbeanstalk-us-east-1-702935569139"
-  bucket_path: "DockerComplex"
+  bucket_path: "Dockercomplex"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
